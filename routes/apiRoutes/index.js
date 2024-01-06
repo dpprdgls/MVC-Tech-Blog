@@ -5,7 +5,7 @@ const commentRoutes = require('./commentRoutes');
 
 //middeware
 router.use('/users', userRoutes);
-router.use('/blogPost', blogPostRoutes);
+router.use('/blogPost', blogRoutes);
 router.use('/comment', commentRoutes);
 
 module.exports = router;

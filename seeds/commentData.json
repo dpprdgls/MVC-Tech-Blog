@@ -1,0 +1,38 @@
+[
+    {
+      "comment_body": "Wow I never thought about that!",
+      "date_created": "August 5, 2023",
+      "user_id": 2,
+      "blogPost_id": 1
+    },
+    {
+      "comment_body": "I just did that myself!",
+      "date_created": "August 5, 2023",
+      "user_id": 3,
+      "blogPost_id": 1
+    },
+    {
+      "comment_body": "FBI agent has left the chat",
+      "date_created": "January 2, 2024",
+      "user_id": 3,
+      "blogPost_id": 2
+    },
+    {
+      "comment_body": "Adjusts tinfoil hat",
+      "date_created": "January 2, 2024",
+      "user_id": 1,
+      "blogPost_id": 2
+    },
+    {
+      "comment_body": "I think I should try this.",
+      "date_created": "September 21, 2023",
+      "user_id": 2,
+      "blogPost_id": 3
+    },
+    {
+      "comment_body": "Words are silver, silence is golden.",
+      "date_created": "September 21, 2023",
+      "user_id": 1,
+      "blogPost_id": 3
+    }
+  ]

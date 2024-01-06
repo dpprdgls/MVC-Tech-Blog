@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Peter Zeihan",
+      "email": "pz@hotmail.com",
+      "password": "password1"
+    },
+    {
+      "name": "Ryan Holiday",
+      "email": "rh@gmail.com",
+      "password": "password12"
+    },
+    {
+      "name": "Richard Zacks",
+      "email": "rz@aol.com",
+      "password": "password123"
+    }
+  ]

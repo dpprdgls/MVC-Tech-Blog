@@ -30,7 +30,7 @@
         {{#if logged_in}}
           <a href="/">Home</a>
           <a href="/dashboard">Dashboard</a>
-          <button class="no-button" id="logout">Logout</button>
+          <button class="no-button" id="logout-btn">Logout</button>
         {{else}}
           <a href="/">Home</a>
           <a href="/dashboard">Dashboard</a>
@@ -42,11 +42,11 @@
     <h1 class="text-center">The Tech Blog</h1>
 
     <main>
-      {{{body}}}
+      {{{ body }}}
     </main>
 
     {{#if logged_in}}
-      <script src="/js/logout.js"></script>
+      <script src="../../public/js/logout.js"></script>
     {{/if}}
 
   </body>

@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const withAuth = require("../utils/auth");
 const { BlogPost, User, Comment } = require("../models");
-
+const apiRoutes = require('./apiRoutes');
 
 router.get("/", async (req, res) => {
+    console.log('homepage route hit');
     try {
         //get all blogposts and join with user and comment data
         const blogPostsData = await BlogPost.findAll({
@@ -123,7 +124,7 @@ router.get('/create/:id', async (req, res) => {
             include: [
                 {
                     model: User,
-                    attributes: ["name"],
+                    attributes: ["username"],
                 },
                 {
                     model: Comment,
@@ -151,8 +152,7 @@ router.get('/create/:id', async (req, res) => {
         }
 });
 
-////////////////////////////////////////////Delete Post/////////////////////////////////////////////
-//will work on in future
+
 
 router.all('/login', (req, res) => {
     if (req.session.logged_in) {

@@ -44,8 +44,17 @@ header {
     background-color: #26391e;
   }
   
-  #logout {
-    background-color: #84a59d;
+ 
+  #logout-btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #63c34e;
+      font-size: 16px;
+      font-family: "ITC Avant Garde Std Normal",sans-serif;
+      line-height: 1.5;
+      padding: 10px;
+      text-transform: uppercase;
+      background-color: none;
   }
 
   nav a {
@@ -82,17 +91,26 @@ header {
   }
   
   /* Card styles */
+
+  .card a {
+    text-decoration: none;
+    color: #696969;
+    font-size: 1.2em;
+    font-family: "ITC Avant Garde Std Normal",sans-serif;
+  }
   
   .card-header {
-    background-color: #e5eaf5;
+    background-color: #C0C0C0;
+    color: #63c34e;
   }
   
   .card-body {
-    background-color: #ffe5ec;
+    background-color: #DCDCDC;
+    color: #9ca1a5;
   }
   
   .card {
-    background-color: #ffe5ec;
+    background-color: #6d6c6c;
   }
   
   .card:hover {

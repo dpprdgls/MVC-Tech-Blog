@@ -14,4 +14,5 @@ router.get('/create/:id', homeController.getEditPost);
 
 router.all('/login', homeController.loginRedirect);
 
+
 module.exports = router;

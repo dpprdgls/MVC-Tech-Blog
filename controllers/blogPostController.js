@@ -47,6 +47,7 @@ const blogPostController = {
                 res.status(404).json({ message: "Matching Blog Post Not Found!" });
                 return;
             }
+            res.redirect('/dashboard');
         } catch (err) {
             res.status(500).json(err);
         }

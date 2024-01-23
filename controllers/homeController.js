@@ -36,7 +36,7 @@ const homeController = {
             include: [
               {
                 model: User,
-                attributes: ["name"],
+                attributes: ["username"],
               },
               {
                 model: Comment,

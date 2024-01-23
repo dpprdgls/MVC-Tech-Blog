@@ -1,22 +1,30 @@
 // Function created that allows users to delete blog posts on dashboard page and then redirect them to an updated dashboard
 const deletePostHandler = async (event) => {
-    event.preventDefault();
-    console.log("clicked me");
-    console.log(event.target);
-  
-    let blogPostId = event.target.getAttribute("data-id");
-    console.log(blogPostId);
-  
-    const response = await fetch(`/api/blogPost/${blogPostId}`, {
-      method: "DELETE",
-    });
-  
-    if (response.ok) {
-      document.location.assign(`/dashboard`);
-    } else {
-      alert(response.statusText);
-    }
-  };
+  event.preventDefault();
+  console.log("clicked dash me");
+  console.log(event.target);
+
+  let blogPostId = event.target.getAttribute("data-id");
+  console.log(blogPostId);
+
+  try {
+      const response = await fetch(`/api/blogPost/${blogPostId}`, {
+          method: "DELETE",
+      });
+
+      if (response.ok) {
+          document.location.assign('dashboard');
+      } else {
+          const data = await response.json();
+          // alert(data.message);
+      }
+  } catch (err) {
+      console.error(err);
+      alert("An error occurred while deleting the blog post.");
+  }
+};
+   
+
   
   // Function created that allows for a user to edit blog posts on dashboard page by redirecting them to the /create/:id page
   const editBlogPost = async (event) => {

@@ -9,6 +9,9 @@ const helpers = require("./utils/helpers");
 const withAuthHelper = require("./utils/auth");
 
 const routes = require("./routes");
+//test routes
+// const allDataRoutes = require('./routes/apiRoutes/allDataRoutes');
+
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
@@ -51,6 +54,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
+//test routes
+// app.use('/api', allDataRoutes);
 
 //withauth helper
 app.use(withAuthHelper);

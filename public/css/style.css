@@ -15,9 +15,18 @@ header {
     padding: 16px;
     margin-bottom: 5px;
   }
+
+  h2{
+    color: #ffffff;
+  }
   
   #blogName {
     color: #ffffff;
+  }
+
+  label {
+    color: white;
+    
   }
   
   main {
@@ -67,8 +76,10 @@ header {
       line-height: 1.5;
       padding: 10px;
       text-transform: uppercase;
-  
+  }
 
+  nav a:hover{
+    color:white;
   }
   
   /* Input/textarea styles */
@@ -110,7 +121,7 @@ header {
   }
   
   .card {
-    background-color: #6d6c6c;
+    background-color: #C0C0C0;
   }
   
   .card:hover {

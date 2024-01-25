@@ -9,7 +9,7 @@ header {
   }
   
   h1 {
-    font-family: "Jomolhari", serif;
+    font-family: "Montserrat", serif;
     background-color: #63c34e;
     color: #ffffff;
     padding: 16px;
@@ -18,6 +18,7 @@ header {
 
   h2{
     color: #ffffff;
+    font-family: "Montserrat", serif;
   }
   
   #blogName {

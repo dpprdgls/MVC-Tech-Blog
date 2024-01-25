@@ -20,7 +20,7 @@ const deletePostHandler = async (event) => {
       }
   } catch (err) {
       console.error(err);
-      alert("An error occurred while deleting the blog post.");
+      document.location.assign('dashboard');
   }
 };
    

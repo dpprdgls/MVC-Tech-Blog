@@ -62,13 +62,11 @@
     
     ## Usage
 
-    This intuitive application will be straight forward and highly interactive for the user via the front-end UI. It will feel similar to many of the other applications they already use on the internet. They can signup and login to their new account and start posting and reading content. 
-   
-
-
     *Instructions and examples for use:*
     
+    The application is available to use here: [The MVC Tech Blog](https://the-mvc-tech-blog-75a3ecb0b535.herokuapp.com/)
 
+     This intuitive application will be straight forward and highly interactive for the user via the front-end UI. It will feel similar to many of the other applications they already use on the internet. They can signup and login to their new account and start posting and reading content. 
 
     ## License
     

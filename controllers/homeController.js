@@ -60,6 +60,13 @@ const homeController = {
     
       getDashboard: async (req, res) => {
         try {
+          // Check if user is logged in based on session
+          if (!req.session.user_id) {
+            // User is not logged in, redirect to login
+            return res.redirect('/login');
+          }
+      
+          // Fetch user data
           const userData = await User.findByPk(req.session.user_id, {
             attributes: { exclude: ["password"] },
             include: [
@@ -72,20 +79,27 @@ const homeController = {
               },
             ],
           });
-    
+      
+          if (!userData) {
+            // Handle the case where user data is not found 
+            return res.status(404).send('User not found');
+          }
+      
+          // User is logged in, render the dashboard
           const user = userData.get({ plain: true });
-    
           res.render("dashboard", {
             ...user,
             logged_in: true,
           });
         } catch (err) {
           console.log(err);
-          res.status(500).json(err);
-          // res.redirect('/login');
+          // Redirect to login if there's an error (e.g., database query failure)
+          res.redirect('/login');
+      
         }
       },
-    
+
+
       getCreatePost: async (req, res) => {
         try {
           if (req.session.logged_in) {

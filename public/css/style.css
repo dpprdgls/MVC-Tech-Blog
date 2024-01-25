@@ -1,7 +1,7 @@
 /* General page styles */
 
 header {
-    font-family: "Jomolhari", serif;
+    font-family: "Montserrat", serif;
   }
   
   body {
@@ -53,9 +53,11 @@ header {
   .navBar {
     background-color: #26391e;
   }
-  
+
  
   #logout-btn {
+      background: none;
+      border: none;
       display: inline-block;
       text-decoration: none;
       color: #63c34e;
@@ -64,7 +66,7 @@ header {
       line-height: 1.5;
       padding: 10px;
       text-transform: uppercase;
-      background-color: none;
+      
   }
 
   nav a {

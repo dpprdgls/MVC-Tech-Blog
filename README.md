@@ -41,7 +41,7 @@
       - Command for connect-session-sequelize will be npm i connect-session-sequelize
       - Command for express-handlebars will be npm i express-handlebars
       - Command for express-session will be npm i express-session
-      - Command for jest will be npm i jest
+      
 
     6. Next, you will need to make sure you have an added .env file within the root directory of your repository, within which you will pass your environmental variables specifying the database name, your MySQL username, and your MySQL password. This will need to be completed before running the application, and will allow the connection.js file to utilize your environmental variables keeping your sensitive information protected.
 
